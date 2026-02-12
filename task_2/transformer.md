@@ -46,3 +46,26 @@ PE(pos, 2i) = sin(pos / 10000^(2i/d))
 PE(pos, 2i+1) = cos(pos / 10000^(2i/d))
 
 This allows the model to understand sequence structure.
+
+
+---
+
+## Self-Attention Visualization
+
+Below is a simplified conceptual representation of the self-attention mechanism:
+
+
+    Query (Q)
+        |
+        v
+ Q × Kᵀ (Similarity Score)
+        |
+     Softmax
+        |
+    × Value (V)
+        |
+     Output
+
+
+
+This diagram shows how queries interact with keys to produce attention weights, which are then applied to values.
