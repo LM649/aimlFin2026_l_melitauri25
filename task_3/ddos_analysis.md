@@ -8,6 +8,14 @@ This abnormal surge indicates a potential Distributed Denial-of-Service (DDoS) a
 
 The presence of multiple source IP addresses and repeated requests to sensitive endpoints such as /usr/admin and /usr/login further supports the likelihood of coordinated malicious activity.
 
-## Requests per Minute Visualization
-
+## Requests per Minute
 ![Requests per Minute](requests_per_minute.png)
+
+## HTTP Status Code Distribution
+![Status Codes](status_codes.png)
+
+## Top Requested Endpoints
+![Top Endpoints](top_endpoints.png)
+
+## Top IP Addresses
+![Top IPs](top_ips.png)
