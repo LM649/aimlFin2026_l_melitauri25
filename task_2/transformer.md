@@ -69,6 +69,9 @@ Below is a simplified conceptual representation of the self-attention mechanism:
 
 
 This diagram shows how queries interact with keys to produce attention weights, which are then applied to values.
+### Positional Encoding Heatmap
+
+![Positional Encoding](positional_encoding.png)
 
 
 ---
