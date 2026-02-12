@@ -69,3 +69,40 @@ Below is a simplified conceptual representation of the self-attention mechanism:
 
 
 This diagram shows how queries interact with keys to produce attention weights, which are then applied to values.
+
+
+---
+
+## Positional Encoding Visualization
+
+Below is a Python example that visualizes sinusoidal positional encoding:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def positional_encoding(position, d_model):
+    PE = np.zeros((position, d_model))
+    for pos in range(position):
+        for i in range(0, d_model, 2):
+            PE[pos, i] = np.sin(pos / (10000 ** ((2*i)/d_model)))
+            if i + 1 < d_model:
+                PE[pos, i+1] = np.cos(pos / (10000 ** ((2*i)/d_model)))
+    return PE
+
+position = 50
+d_model = 16
+
+PE = positional_encoding(position, d_model)
+
+plt.figure(figsize=(10,5))
+plt.imshow(PE, aspect='auto')
+plt.title("Positional Encoding Heatmap")
+plt.xlabel("Embedding Dimension")
+plt.ylabel("Position")
+plt.colorbar()
+plt.show()
+
+
+
+
