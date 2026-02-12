@@ -105,4 +105,42 @@ plt.show()
 
 
 
+---
+
+## Transformer Application in Cybersecurity: Log Anomaly Detection
+
+Transformers are widely used for analyzing sequential log data in cybersecurity systems.
+
+In a real-world environment, servers generate thousands of log entries per minute. These logs contain sequences of events such as:
+
+- User login
+- File access
+- Failed authentication attempts
+- Privilege escalation
+- Network connections
+
+Since logs are sequential data, transformers are well suited for modeling dependencies between events.
+
+### Example Scenario
+
+Consider the following log sequence:
+
+1. Successful login
+2. File access
+3. Multiple failed admin login attempts
+4. Sudden privilege escalation
+
+A transformer-based model can learn normal behavioral patterns and detect deviations from them.
+
+### Why Transformer is Effective Here
+
+- Self-attention captures relationships between distant log events.
+- Parallel processing allows large-scale log analysis.
+- Context-aware modeling improves anomaly detection accuracy.
+
+In practice, such models are used in:
+- SIEM systems
+- Threat detection platforms
+- Insider threat monitoring
+- Advanced persistent threat (APT) detection
 
