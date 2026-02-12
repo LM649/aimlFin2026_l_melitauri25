@@ -157,4 +157,17 @@ plt.show()
 
 
 
+---
+
+## Model Evaluation Concept
+
+In a real-world cybersecurity environment, the trained CNN model would be evaluated using metrics such as:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+
+These metrics are especially important in malware detection because false negatives (undetected malware) can cause serious security incidents.
 
